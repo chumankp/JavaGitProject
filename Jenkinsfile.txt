@@ -5,7 +5,7 @@ pipeline {
         stage('Build HelloWorld') {
             steps {
                 echo "Compiling and running HelloWorld.java"
-                sh '''
+                bat '''
                     javac HelloWorld.java
                     java HelloWorld
                 '''
@@ -15,7 +15,7 @@ pipeline {
         stage('Build HelloWipro') {
             steps {
                 echo "Compiling and running HelloWipro.java"
-                sh '''
+                bat '''
                     javac HelloWipro.java
                     java HelloWipro
                 '''
@@ -25,7 +25,7 @@ pipeline {
         stage('Build HelloJenkins') {
             steps {
                 echo "Compiling and running HelloJenkins.java"
-                sh '''
+                bat '''
                     javac HelloJenkins.java
                     java HelloJenkins
                 '''
